@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface QYLViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *inputText;
+@property (weak, nonatomic) IBOutlet UITextField *outputText;
+
+- (IBAction)textFiledReturnEditing:(UITextField *)sender;
+- (IBAction)backgroundTap:(id)sender;
+
+- (IBAction)calButton:(UIButton *)sender;
 
 @end
